@@ -7,7 +7,7 @@ name = "stashhouse-tftp"
 version = "0.0.2"
 dependencies = [
     "py3tftp==1.3.0",
-    "stashhouse==0.0.3"
+    "stashhouse==0.0.4"
 ]
 requires-python = ">=3.11"
 authors = [
