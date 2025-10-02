@@ -124,4 +124,4 @@ class FileWriter(py3tftp.file_io.FileWriter):
         return self.fname.open("xb")
 
 
-__all__ = "FileWriter",
+__all__ = ("FileWriter",)

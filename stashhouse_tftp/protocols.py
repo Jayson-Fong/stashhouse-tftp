@@ -137,4 +137,4 @@ class TFTPServerProtocol(py3tftp.protocols.BaseTFTPServerProtocol):
         return lambda filename, opts: ...
 
 
-__all__ = "TFTPServerProtocol",
+__all__ = ("TFTPServerProtocol",)
