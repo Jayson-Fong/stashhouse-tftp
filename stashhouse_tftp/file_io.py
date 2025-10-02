@@ -76,7 +76,7 @@ class FileWriter(py3tftp.file_io.FileWriter):
     """
 
     # noinspection SpellCheckingInspection
-    __slots__ = ("fname", "chunk_size", "_f")
+    __slots__: tuple[str, ...] = ("fname", "chunk_size", "_f")
 
     # noinspection SpellCheckingInspection
     # pylint: disable=super-init-not-called
@@ -124,4 +124,4 @@ class FileWriter(py3tftp.file_io.FileWriter):
         return self.fname.open("xb")
 
 
-__all__ = ("FileWriter",)
+__all__: tuple[str, ...] = ("FileWriter",)

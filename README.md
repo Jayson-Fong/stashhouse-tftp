@@ -24,8 +24,8 @@ will prevent read access to files and only enable writing.
 
 This package is a plugin for [StashHouse](https://pypi.org/project/stashhouse/). To install the program:
 
-```console
-python3 -m pip install stashhouse[tftp]
+```shell
+python3 -m pip install 'stashhouse[tftp]'
 ```
 
 The following command-line arguments are available:
@@ -36,7 +36,7 @@ The following command-line arguments are available:
 ```
 
 For example, to start the TFTP server on port 8069
-```bash
+```shell
 stashhouse -e tftp --tftp.port 8069
 ```
 

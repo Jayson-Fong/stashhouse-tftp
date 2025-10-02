@@ -28,6 +28,8 @@ class OperationProhibitedProtocol(py3tftp.protocols.BaseTFTPProtocol):
     Sends an error on initialization to prevent activity.
     """
 
+    __slots__: tuple[str, ...] = tuple()
+
     def handle_initialization(self) -> None:
         """
         Sends the first packet to the remote address, which
@@ -78,6 +80,8 @@ class TFTPServerProtocol(py3tftp.protocols.BaseTFTPServerProtocol):
     Attributes:
         data_directory: Path to the data directory.
     """
+
+    __slots__: tuple[str, ...] = ("data_directory",)
 
     def __init__(
         self, *args, data_directory: pathlib.Path = pathlib.Path("data"), **kwargs
@@ -137,4 +141,4 @@ class TFTPServerProtocol(py3tftp.protocols.BaseTFTPServerProtocol):
         return lambda filename, opts: ...
 
 
-__all__ = ("TFTPServerProtocol",)
+__all__: tuple[str, ...] = ("TFTPServerProtocol",)
