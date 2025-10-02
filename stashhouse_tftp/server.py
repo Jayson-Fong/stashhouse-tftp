@@ -37,6 +37,14 @@ class TFTPServer:
         conn_timeout: Timeout before aborting a connection.
     """
 
+    __slots__: tuple[str, ...] = (
+        "server_options",
+        "exited",
+        "port",
+        "ack_timeout",
+        "conn_timeout",
+    )
+
     # pylint: disable=too-many-arguments,too-many-positional-arguments
     def __init__(
         self,
@@ -107,4 +115,4 @@ class TFTPServer:
         asyncio.run(self._run())
 
 
-__all__ = ("TFTPServer",)
+__all__: tuple[str, ...] = ("TFTPServer",)

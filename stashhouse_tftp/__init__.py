@@ -74,4 +74,4 @@ def parse_arguments(plugin_name: str, args: argparse.Namespace) -> dict[str, Any
     }
 
 
-__all__ = ("__version__", "register_arguments", "parse_arguments")
+__all__: tuple[str, ...] = ("__version__", "register_arguments", "parse_arguments")
